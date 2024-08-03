@@ -59,8 +59,9 @@ const Login = () => {
         Login
       </Button>
       <Typography variant="body2" marginTop={2}>
-        Don't have an account? <Link href="/SignUp">Sign Up Here</Link>
-      </Typography>
+  Don&apos;t have an account? <Link href="/SignUp">Sign Up Here</Link>
+</Typography>
+
     </Box>
   );
 };
