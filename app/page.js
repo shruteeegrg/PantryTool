@@ -288,7 +288,7 @@ const handleSaveChanges = async () => {
       <Box
         width="100%"
         display="flex"
-        flexDirection={{ xs: 'column', md: 'row' }} // Responsive flex direction
+        flexDirection={{ xs: 'column', md: 'row' }}
         gap={2}
       >
         {/* Add New Item Form */}
