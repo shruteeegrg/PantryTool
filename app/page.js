@@ -164,11 +164,11 @@ const handleSaveChanges = async () => {
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
-        const { quantity } = docSnap.data();
+        const { quantity, expirationDate: existingDate, description, price, supplier } = docSnap.data();
         if (quantity === 1) {
           await deleteDoc(docRef);
         } else {
-          await setDoc(docRef, { quantity: quantity - 1 });
+          await setDoc(docRef, { quantity: quantity - 1, expirationDate: existingDate, description, price, supplier });
         }
         await updateInventory();
       }
